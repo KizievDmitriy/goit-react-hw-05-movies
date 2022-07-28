@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/576.540aee4e.chunk.css","mappings":"AAAA,oBAII,+BAAgC,CADhC,aAAc,CAFd,cAAe,CACf,iBAGJ","sources":["components/Title/Title.module.css"],"sourcesContent":[".title {\n    padding: 20px 0;\n    text-align: center;\n    color: #ef233c;\n    border-bottom: 1px solid #edf2f4;\n}\n"],"names":[],"sourceRoot":""}
