@@ -21,7 +21,7 @@ export default function MovieDetails({ movieData }) {
         ? 'https://image.tmdb.org/t/p/w500' + poster_path
         : 'https://www.reelviews.net/resources/img/default_poster.jpg';
     const date = release_date.slice(0, 4);
-    const genres = movieData.genres.map(genre => genre.name).join(', ');
+    const genres = movieData.genres.map(genre => genre.name).join(' / ');
 
     return (
         <>
@@ -38,12 +38,13 @@ export default function MovieDetails({ movieData }) {
                         <h2 className={s.title}>
                             {title} ({date})
                         </h2>
-                        <h4 className={s.subtitle}>User Score:</h4>
-                        <p className={s.score}> {vote_average}/10</p>
+                        <h4 className={s.subtitle}>User Score:
+                            <b className={s.score}> {vote_average}/10</b>
+                        </h4>
+                        <h4 className={s.subtitle}>Genres:</h4>
+                        <p className={s.genres}>{genres}</p>
                         <h4 className={s.subtitle}>Overview: </h4>
                         <p className={s.overview}>{overview}</p>
-                        <h4 className={s.subtitle}>Genres: </h4>
-                        <p className={s.genres}>{genres}</p>
                     </div>
                 </div>
             </div>
