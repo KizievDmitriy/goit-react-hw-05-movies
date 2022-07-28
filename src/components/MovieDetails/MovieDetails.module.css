@@ -7,17 +7,16 @@
     display: block;
     text-align: center;
     width: 100px;
-    font-size: 14px;
-    border-radius: 20px;
-    border: none;
-    padding: 5px 20px;
-    background-color: #2b2d42;
-    color: #edf2f4;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    background-color: #ef233c;
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
-    background-color: #8d99ae;
+    background-color: #ef233bbb;
 }
 
 .card {

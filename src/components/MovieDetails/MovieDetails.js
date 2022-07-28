@@ -27,7 +27,7 @@ export default function MovieDetails({ movieData }) {
         <>
             <div className={s.movieWrap}>
                 <NavLink to={lastStateFrom ? lastStateFrom : '/'} className={s.btn}>
-                    Go back!
+                &larr; Back
                 </NavLink>
 
                 <div className={s.card}>
