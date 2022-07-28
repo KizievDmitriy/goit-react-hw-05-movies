@@ -31,7 +31,13 @@ export default function SearchForm({ handleSubmit, movies }) {
     };
     return (
         <form onSubmit={onSubmit} className={s.form}>
-            <input type="text" className={s.input} name="query" value={query} onChange={onChange} />
+            <input
+                placeholder=" Search films"
+                type="text"
+                className={s.input}
+                name="query"
+                value={query}
+                onChange={onChange} />
             <button type="submit" className={s.btn}>
                 Search
             </button>
