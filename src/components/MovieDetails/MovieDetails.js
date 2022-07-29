@@ -39,7 +39,7 @@ export default function MovieDetails({ movieData }) {
                             {title} ({date})
                         </h2>
                         <h4 className={s.subtitle}>User Score:
-                            <b className={s.score}> {vote_average}/10</b>
+                            <b className={s.score}> {`${vote_average.toFixed()}`}/10</b>
                         </h4>
                         <h4 className={s.subtitle}>Genres:</h4>
                         <p className={s.genres}>{genres}</p>
